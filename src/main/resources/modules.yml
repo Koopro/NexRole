@@ -1,0 +1,4 @@
+TestModule:
+  enabled: false
+DeathCounter:
+  enabled: true

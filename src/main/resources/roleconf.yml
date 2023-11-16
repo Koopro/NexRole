@@ -1,0 +1,9 @@
+roles:
+  admin:
+    prefix: "\ue000"
+  moderator:
+    prefix: "\ue001"
+  member:
+    prefix: "\ue002"
+  dev:
+    prefix: "\ue003"

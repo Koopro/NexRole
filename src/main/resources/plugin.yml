@@ -1,0 +1,34 @@
+name: NexRole
+version: '${project.version}'
+main: at.koopro.nexrole.NexRole
+api-version: '1.20'
+authors: [Koopro]
+description: NexRole is a comprehensive role and permissions management plugin for Minecraft servers. It allows server administrators to assign roles with specific permissions and prefixes to players, track player statistics such as playtime and last login, and manage these roles through an intuitive in-game command system.
+
+commands:
+  modules:
+    description: Activate or deactivate modules
+    usage: /<command> <activate|deactivate> <moduleName|all>
+    permission: nexrole.modules
+    permission-message: You do not have permission to use this command.
+
+  testcommand:
+    description: A test command for the TestModule.
+    usage: /<command>
+
+  setrole:
+    description: Assign a role to a player
+    usage: /<command> <player> <role>
+    permission: nexrole.setrole
+    permission-message: You do not have permission to use this command.
+
+  getrole:
+    description: Get the role of a player
+    usage: /<command> <player>
+    permission: nexrole.getrole
+    permission-message: You do not have permission to use this command.
+
+  status:
+    description: Manage your status by setting or removing a role
+    usage: /<command> set <roleName>
+    permission-message: You do not have permission to use this command.
